@@ -27,13 +27,19 @@
 		\{1, 2, dog\},
 		\{1, cat, dog\},
 		\{2, cat ,dog\},
-		\{1, 2, cat, dog\}
+		\{1, 2, cat, dog\}\\	
+		\{\varnothing\},
+		\{\varnothing, cat\},
+		\{\varnothing, dog\},
+		\{\varnothing, cat ,dog\},
+		\{\{\}\},
+		\{\{\}\},
+		\{\{\}\},
 		$
 	\item $ \sum_{k=1}^{n} {n \choose k} = 2^n$
 	\item 
 	\begin{proof} 
-		We check the base case. When the set $S$ has zero element, the powerset of $S$ has only one element, the null set which is $2^0=1$. As a result, the base case is true. We assume for all n, the lemma stays true. We induct on n. Then the power set of S that has just one more element should have $2^(n+1)$.
-We see that $2^$
+		We check the base case. When the set $S$ has zero element, the powerset of $S$ has only one element, the null set which is $2^0=1$. As a result, the base case is true. As discovered above, we know that $ \sum_{k=1}^{n} {n \choose k} = 2^n$ We induct on n. We have to show that $ 2\sum_{k=1}^{n} {n \choose k} = 2^n+1$. We see that $\sum_{k=1}^{n} {n \choose k} + \sum_{k=1}^{n} {n \choose k} = 2^n + 2^n = 2(2^n) = 2^n+1$ Thus the proposition stays true.  
 	\end{proof}
 \end{enumerate}
 \end{document}
